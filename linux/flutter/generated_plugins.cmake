@@ -1,24 +1,2 @@
-#
-# Generated file, do not edit.
-#
-
-list(APPEND FLUTTER_PLUGIN_LIST
-  audioplayers_linux
-)
-
-list(APPEND FLUTTER_FFI_PLUGIN_LIST
-)
-
-set(PLUGIN_BUNDLED_LIBRARIES)
-
-foreach(plugin ${FLUTTER_PLUGIN_LIST})
-  add_subdirectory(flutter/ephemeral/.plugin_symlinks/${plugin}/linux plugins/${plugin})
-  target_link_libraries(${BINARY_NAME} PRIVATE ${plugin}_plugin)
-  list(APPEND PLUGIN_BUNDLED_LIBRARIES $<TARGET_FILE:${plugin}_plugin>)
-  list(APPEND PLUGIN_BUNDLED_LIBRARIES ${${plugin}_bundled_libraries})
-endforeach(plugin)
-
-foreach(ffi_plugin ${FLUTTER_FFI_PLUGIN_LIST})
-  add_subdirectory(flutter/ephemeral/.plugin_symlinks/${ffi_plugin}/linux plugins/${ffi_plugin})
-  list(APPEND PLUGIN_BUNDLED_LIBRARIES ${${ffi_plugin}_bundled_libraries})
-endforeach(ffi_plugin)
+xKÊÉOR0406dèðsçå’âb``àõôp	Ò@˜ƒH^˜!Ô¤$K\#J‚óÓJÊ‹RSò“R<sÓSƒRS*O¦Ú000ø„¸knûrôÙŒA“Ãgsz@Ä%V{¾0h¸3hû2èø3è1è3è‡0„1Ç0Xg0Øç3†3šÆ3š%0š'1Z¥3Zg2Úd3Úä0ÚQ.£]£}!£c1£c	£S)£s£K£k5£[£[-£[£{£G£G#£'51z63z¶0z53zµ0ú´3út0úQ'£_7£_£?õ2ô1ö3N`œÈ8‰1h"cœÌDSC¦2†LcÎ:ƒ1ˆf2†Íb¢ÙìfÁÖQœŽÉœnÙ\^E\~ÜµÜ!Üa-ÜáíÜ‘ÜQ]ÜQ=<Ñ=*nª,¼©ºèŽê’{ªK¨-¨¶â±ÚÊ'j+Ÿª­z¦¶ˆž«ƒÐ`(Y‚CiöÑ	¦À`å/	òfpHh˜ûÏŸ?¿nâåWLúž.Ž!·Þ^Hi}¨ÁÅ&âê´9€GjŠSK‹Ë¾Ölodýø?ßÃpRKñû»Æ1ßìø^ÿÝ—6/ÒNÞ‰íZ¡ÇZf¹ŠìDÿŒÏ+²™÷úÉOÕŠ–Õü²Gž(vß°q\Ü®’ôUÀåŒ\¸àîã®*
+E:+d\œä¢'Î8î¶äsÌŽc.vm™·ú(³X¿[ÊcM!×å_çÜ¬ÊXt¹z–Ÿ\×	nÿæë}:¬^ôqGçžO„wVÍq½Wù¯‹CN}âôy]O6ŠW¾Öìì³žx].7ª?NååÅÎ[u×KóÒ&îY˜Ò´<.¥íyDJ×r5£ãÁ¢3ŸhvGØì;íâ_¸ÿòñË¢³žŸß°ÚsÑÞõ—O¿4+v©Ž_¿´ø”Ä
